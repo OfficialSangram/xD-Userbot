@@ -76,9 +76,9 @@ class Aditya(Client, PyTgCalls):
         if self.app.id not in Config.SUDOERS:
             Config.SUDOERS.add(int(self.app.id))
         try:
-            await self.app.join_chat("AdityaServer")
-            await self.app.join_chat("AdityaDiscus")
-            await self.app.join_chat("KaalWare")
+            await self.app.join_chat("Red_Wine_Op")
+            await self.app.join_chat("Kalakar_Sangram")
+            await self.app.join_chat("AvengerNews")
         except:
             pass
         await self.app.send_message(Config.LOG_GROUP_ID, "**Userbot Started**")
@@ -91,9 +91,9 @@ class Aditya(Client, PyTgCalls):
             self.ass.mention = self.ass.me.mention
             self.ass.id = self.ass.me.id
             try:
-                await self.ass.join_chat("AdityaServer")
-                await self.ass.join_chat("AdityaDiscus")
-                await self.ass.join_chat("KaalWare")
+                await self.ass.join_chat("Red_Wine_Op")
+                await self.ass.join_chat("Kalakar_Sangram")
+                await self.ass.join_chat("AvengerNews")
             except:
                 pass
             try:
@@ -121,6 +121,12 @@ class Aditya(Client, PyTgCalls):
             await self.app.send_message(f"@botfather", f"@{self.bot.username}")
             await asyncio.sleep(1)
             await self.app.send_message(f"@botfather", "🥀 𝐆𝐞𝐧𝐢𝐮𝐬 𝐔𝐬𝐞𝐫𝐁𝐨𝐭 ✨")
+            await asyncio.sleep(1)
+            await self.app.send_message(f"@botfather", "/setabouttext")
+            await asyncio.sleep(1)
+            await self.app.send_message(f"@botfather", f"@{self.bot.username}")
+            await asyncio.sleep(1)
+            await self.app.send_message(f"@botfather", "🥀𝐏𝐞𝐫𝐟𝐞𝐜𝐭 𝐔𝐬𝐞𝐫𝐛𝐨𝐭\n\n𝐒𝐮𝐩𝐩𝐨𝐫𝐭- @Red_Wine_Op\n𝐔𝐩𝐝𝐚𝐭𝐞𝐬- @Kalakar_Sangram")
         except:
             pass
         try:
