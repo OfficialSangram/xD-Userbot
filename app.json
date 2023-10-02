@@ -8,7 +8,7 @@
         "videobot",
         "telegram"
     ],
-    "repository": "https://github.com/AdityaHalder/Genius-Userbot",
+    "repository": "https://github.com/OfficialSangram/Userbot",
     "stack": "container",
     "env": {
         "API_ID": {
