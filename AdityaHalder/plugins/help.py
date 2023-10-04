@@ -57,10 +57,10 @@ async def help_button(client, query):
 **🥀 Welcome To Help Menu Of
 Genius Userbot » {__version__} ✨...
 
-Click On Below 🌺 Buttons To
+Click On Below Buttons To
 Get Userbot Commands.
 
-🌷Powered By : [Aditya Server](https://t.me/AdityaServer).**"""
+🌷Powered By : [Sangram](https://t.me/Kalakar_Sangram).**"""
     if plug_match:
         plugin = plug_match.group(1)
         text = (
