@@ -11,7 +11,7 @@ async def help_menu_logo(answer):
     if var.USERBOT_PICTURE:
         thumb_image = var.USERBOT_PICTURE
     else:
-        thumb_image = "https://telegra.ph/file/027283ee9defebc3298b8.png"
+        thumb_image = "https://telegra.ph/file/f5d2e046826859d0eb492.jpg"
     button = paginate_plugins(0, PLUGINS, "help")
     answer.append(
         InlineQueryResultPhoto(
@@ -23,10 +23,10 @@ async def help_menu_logo(answer):
 **🥀 Welcome To Help Menu Of
 Genius Userbot » {__version__} ✨...
 
-Click On Below 🌺 Buttons To
+Click On Below Buttons To
 Get Userbot Commands.
 
-🌷Powered By : [Aditya Server](https://t.me/AdityaServer).**
+🌷Powered By : [Sangram](https://t.me/Kalakar_Sangram).**
             """,
             reply_markup=InlineKeyboardMarkup(button),
         )
@@ -43,10 +43,10 @@ async def help_menu_text(answer):
 **🥀 Welcome To Help Menu Of
 Genius Userbot » {__version__} ✨...
 
-Click On Below 🌺 Buttons To
+Click On Below Buttons To
 Get Userbot Commands.
 
-🌷Powered By : [Aditya Server](https://t.me/AdityaServer).**""",
+🌷Powered By : [Sangram](https://t.me/Kalakar_Sangram).**""",
             disable_web_page_preview=True
             ),
             reply_markup=InlineKeyboardMarkup(button),
