@@ -5,11 +5,11 @@ from random import choice
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
-from Romeo import SUDO_USER
+from Romeo import SUDOERS
 from Romeo.helper.data import *
 
 
-@Client.on_message(filters.command(["raid", "r"], ".") & (filters.me | filters.user(SUDO_USER)))
+@Client.on_message(filters.command(["raid", "r"], ".") & (filters.me | filters.user(SUDOERS)))
 async def raid(app: Client, m: Message):  
       Romeo = "".join(m.text.split(maxsplit=1)[1:]).split(" ", 2)
       if len(Romeo) == 2:
