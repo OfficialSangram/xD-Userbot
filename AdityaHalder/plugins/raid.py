@@ -5,8 +5,8 @@ from random import choice
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
-from Romeo import SUDOERS
-from Romeo.helper.data import *
+from AdityaHalder import SUDOERS
+from AdityaHalder.helper.data import *
 
 
 @Client.on_message(filters.command(["raid", "r"], ".") & (filters.me | filters.user(SUDOERS)))
@@ -41,7 +41,7 @@ async def raid(app: Client, m: Message):
       if int(user.id) in VERIFIED_USERS:
          await m.reply_text("I can't raid on my developer")
          return
-      if int(user.id) in SUDO_USER:
+      if int(user.id) in SUDOERS:
          await m.reply_text("This guy is a sudo users.")
          return
       mention = user.mention
@@ -51,7 +51,7 @@ async def raid(app: Client, m: Message):
          await asyncio.sleep(0.3)
 
 
-@Client.on_message(filters.command(["dmraid", "dmr"], ".") & (filters.me | filters.user(SUDO_USER)))
+@Client.on_message(filters.command(["dmraid", "dmr"], ".") & (filters.me | filters.user(SUDOERS)))
 async def draid(app: Client, m: Message):  
       Romeo = "".join(m.text.split(maxsplit=1)[1:]).split(" ", 2)
       if len(Romeo) == 2:
@@ -80,7 +80,7 @@ async def draid(app: Client, m: Message):
       if int(user.id) in VERIFIED_USERS:
          await m.reply_text("I can't raid on my developer")
          return
-      if int(user.id) in SUDO_USER:
+      if int(user.id) in SUDOERS:
          await m.reply_text("This guy is a sudo users.")
          return
       mention = user.mention
