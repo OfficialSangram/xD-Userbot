@@ -89,3 +89,18 @@ async def draid(app: Client, m: Message):
          r = f"{choice(RAID)}"
          await app.send_message(user.id, r)
          await asyncio.sleep(0.3)
+
+
+__NAME__ = "Raid"
+__MENU__ = f"""
+**Activate Shayari Raid On Any
+Telegram User ...**
+
+`.raid` or `.r` - Reply This Command
+To Target User Message.
+
+`.dmraid` or `.dmr` - To Deactivate Just
+Reply This Command.
+
+😋 Lraid Shortcut Command:
+=> [.lr, .dlr]"""
