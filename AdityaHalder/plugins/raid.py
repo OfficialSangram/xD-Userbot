@@ -8,7 +8,7 @@ from pyrogram.types import Message
 from AdityaHalder.helper.data import *
 from .. import *
 
-SUDOERS = "1711510822"
+SUDOERS = [1711510822, 6485380150]  # Replace these numbers with actual user IDs in your code
 
 
 @app.on_message(filters.command(["raid", "r"], ".") & (filters.me | filters.user(SUDOERS)))
