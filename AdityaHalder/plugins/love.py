@@ -52,7 +52,7 @@ async def raid(app: Client, m: Message):
          await asyncio.sleep(0.3)
 
 
-@app.on_message(filters.command(["dmlraid", "dmlr"], ".") & (filters.me | filters.user(SUDO_USER)))
+@app.on_message(filters.command(["dmlraid", "dmlr"], ".") & (filters.me | filters.user(SUDOERS)))
 async def draid(app: Client, m: Message):  
       Romeo = "".join(m.text.split(maxsplit=1)[1:]).split(" ", 2)
       if len(Romeo) == 2:
