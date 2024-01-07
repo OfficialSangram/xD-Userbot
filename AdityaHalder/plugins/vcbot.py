@@ -44,7 +44,7 @@ async def audio_stream(client, message):
                     file,
                     HighQualityAudio(),
                 ),
-                stream=AudioPiped(file, HighQualityAudio(), stream_type=StreamType().pulse_stream)
+                stream=AudioPiped(file, HighQualityAudio(), StreamType().pulse_stream)
             )
             await put_que(chat_id, file, "Audio")
             await m.edit("**🥳 Streaming Started!**")
@@ -94,7 +94,7 @@ async def video_stream(client, message):
                     HighQualityAudio(),
                     HighQualityVideo(),
                 ),
-                stream=AudioPiped(file, HighQualityAudio(), stream_type=StreamType().pulse_stream)
+                stream=AudioPiped(file, HighQualityAudio(), StreamType().pulse_stream)
             )
             await put_que(chat_id, file, "Video")
             await m.edit("**🥳 Streaming Started!**")
