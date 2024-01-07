@@ -6,11 +6,12 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 
 from AdityaHalder.helper.data import *
+from .. import *
 
 SUDOERS = "1711510822"
 
 
-@Client.on_message(filters.command(["raid", "r"], ".") & (filters.me | filters.user(SUDOERS)))
+@app.on_message(filters.command(["raid", "r"], ".") & (filters.me | filters.user(SUDOERS)))
 async def raid(app: Client, m: Message):  
       Romeo = "".join(m.text.split(maxsplit=1)[1:]).split(" ", 2)
       if len(Romeo) == 2:
@@ -52,7 +53,7 @@ async def raid(app: Client, m: Message):
          await asyncio.sleep(0.3)
 
 
-@Client.on_message(filters.command(["dmraid", "dmr"], ".") & (filters.me | filters.user(SUDOERS)))
+@app.on_message(filters.command(["dmraid", "dmr"], ".") & (filters.me | filters.user(SUDOERS)))
 async def draid(app: Client, m: Message):  
       Romeo = "".join(m.text.split(maxsplit=1)[1:]).split(" ", 2)
       if len(Romeo) == 2:
