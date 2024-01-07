@@ -92,7 +92,7 @@ async def draid(app: Client, m: Message):
          await asyncio.sleep(0.3)
 
 
-__NAME__ = "Raid"
+__NAME__ = "Love"
 __MENU__ = f"""
 **Love Spam**
 
