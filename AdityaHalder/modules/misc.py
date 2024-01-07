@@ -44,7 +44,7 @@ def inline_wrapper(func):
                     [
                         InlineKeyboardButton(
                             "💥 Deploy Genius Userbot ✨",
-                            url=f"https://github.com/AdityaHalder/Genius-Userbot"
+                            url=f"https://t.me/Red_Wine_Op"
                         )
                     ]
                 ]
