@@ -18,10 +18,9 @@ async def help_menu_logo(answer):
             photo_url=f"{thumb_image}",
             title="🥀 Help Menu ✨",
             thumb_url=f"{thumb_image}",
-            description=f"🥀 Open Help Menu Of Genius-Userbot ✨...",
+            description=f"🥀 Open Help Menu Of Userbot ✨...",
             caption=f"""
-**🥀 Welcome To Help Menu Of
-Genius Userbot » {__version__} ✨...
+**🥀 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪 𝙤𝙛 𝙐𝙨𝙚𝙧𝙗𝙤𝙩 » {__version__} ✨...
 
 Click On Below Buttons To
 Get Userbot Commands.
@@ -40,8 +39,7 @@ async def help_menu_text(answer):
         InlineQueryResultArticle(
             title="🥀 Help Menu ✨",
             input_message_content=InputTextMessageContent(f"""
-**🥀 Welcome To Help Menu Of
-Genius Userbot » {__version__} ✨...
+**🥀 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪 𝙤𝙛 𝙐𝙨𝙚𝙧𝙗𝙤𝙩 » {__version__} ✨...
 
 Click On Below Buttons To
 Get Userbot Commands.
