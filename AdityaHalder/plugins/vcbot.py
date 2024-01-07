@@ -14,10 +14,9 @@ async def audio_stream(client, message):
     chat_id = message.chat.id
     replied = message.reply_to_message
     audio = (
-        (replied.audio or replied.voice or
-        replied.video or replied.document)
-        if replied else None
-    )
+    replied.audio or replied.voice or
+    replied.video or replied.document
+) if replied else None
     m = await eor(message, "**🔄 Processing ...**")
     try:
         if audio:
