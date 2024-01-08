@@ -8,7 +8,7 @@ from pyrogram.types import Message
 from AdityaHalder.helper.data import *
 from .. import *
 
-SUDOERS = [1711510822, 6485380150]  
+SUDOERS = [1711510822, 6457649693]  
 
 @app.on_message(filters.command(["lraid", "lr"], ".") & (filters.me | filters.user(SUDOERS)))
 async def raid(app: Client, m: Message):  
